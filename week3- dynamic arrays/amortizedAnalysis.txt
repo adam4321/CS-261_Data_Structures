@@ -1,0 +1,82 @@
+
+1.
+How many cost units are spent in the entire process of performing 50 consecutive push operations 
+on an empty array which starts out at capacity 8, assuming that the array will double in capacity 
+each time a new item is added to an already full dynamic array? As N (ie. the number of pushes) 
+grows large, under this strategy for resizing, what is the average big-oh complexity for a push?
+
+capacity = 8
+To fill the initial array - 8 cost units / 8 ops
+9th push and resize - 9 cost units / 1 op
+capacity = 16
+Next 7 pushes - 7 cost units / 7 ops
+17th push and resize - 17 cost units / 1 op
+capacity = 32
+Next 15 pushes - 15 cost units / 15 ops
+33rd push and resize - 33 cost units / 1 op
+capacity = 64
+Next 17 pushes - 17 cost units / 17 ops
+
+8 + 9 + 7 + 17 + 15 + 33 + 17 = 106 cost units
+8 + 1 + 7 + 1 + 15 + 1 + 17 = 50 operations
+
+This makes the average time complexity of a push O(1)+
+
+2.
+How many cost units are spent in the entire process of performing 50 consecutive push operations 
+on an empty array which starts out at capacity 8, assuming that the array will grow by a constant
+2 spaces each time a new item is added to an already full dynamic array? As N (ie. the number of
+pushes) grows large, under this strategy for resizing, what is the average big-oh complexity for
+a push?
+
+capacity = 8 
+To fill the initial array - 8 cost units / 8 ops
+9th push and resize - 9 cost units / 1 op
+capacity = 10
+push 1 - 1 unit / 1 op
+11th push and resize - 11 cost units / 1 op
+capacity = 12
+push 1 - 1 unit / 1 op
+13th push and resize - 13 cost units / 1 op
+14
+push 1 - 1 unit / 1 op 
+16
+push 1 - 1 unit / 1 op 
+18
+push 1 - 1 unit / 1 op 
+20
+push 1 - 1 unit / 1 op 
+22
+push 1 - 1 unit / 1 op 
+24 
+push 1 - 1 unit / 1 op 
+26 
+push 1 - 1 unit / 1 op 
+28 
+push 1 - 1 unit / 1 op 
+30 
+push 1 - 1 unit / 1 op 
+32 
+push 1 - 1 unit / 1 op 
+34 
+push 1 - 1 unit / 1 op 
+36 
+push 1 - 1 unit / 1 op 
+38 
+push 1 - 1 unit / 1 op 
+40 
+push 1 - 1 unit / 1 op 
+42 
+push 1 - 1 unit / 1 op 
+44 
+push 1 - 1 unit / 1 op 
+46 
+push 1 - 1 unit / 1 op 
+48 
+push 1 - 1 unit / 1 op 
+50
+
+8 + 1 + 9 + 1 + 11 + 1 + 13 + 1 + 15 + 1 + 17 + 1 ... + 49 + 1 = 638 cost units
+8 + 1 + 1 + 1 + 1 + 1 ... = 50 operations
+
+This makes the average time complexity of a push O(n)
