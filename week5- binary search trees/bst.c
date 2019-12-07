@@ -45,7 +45,7 @@ void initBSTree(struct BSTree *tree) {
 ** post: tree->count = 0
 **	tree->root = 0;
 **************************************************************************/
-struct BSTree*  newBSTree() {
+struct BSTree *newBSTree() {
 	struct BSTree *tree = (struct BSTree *)malloc(sizeof(struct BSTree));
 	assert(tree != 0);
 
