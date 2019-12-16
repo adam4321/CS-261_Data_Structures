@@ -1,3 +1,3 @@
-# Data Structures assignments from Oregon State University
+# Oregon State University CS-261 Data Structures
 
-All of the programs are build in C
+Assignments from summer term 2019 at OSU. All of the programs are built in C
